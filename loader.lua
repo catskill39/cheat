@@ -1,9 +1,9 @@
 --[🔐] Настройки ключей
 local PREMIUM_KEYS = {
-    ["YOUR_PREMIUM_KEY_1"] = true,
+    ["prem_SIjsiji1ji233uhijdjjfijiw"] = true,
     ["YOUR_PREMIUM_KEY_2"] = true
 }
-local FREE_KEY = "FREEKEY-1234"
+local FREE_KEY = "FREE"
 local FREE_KEY_DURATION = 24 * 60 * 60 -- 24 часа в секундах
 local STORAGE_FILE = "auth_data.txt"
 
@@ -101,7 +101,7 @@ Button.MouseButton1Click:Connect(function()
         wait(1)
         ScreenGui:Destroy()
         -- Загрузка скрипта после успешной авторизации
-        loadstring(game:HttpGet("https://yourdomain.com/your_script.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/catskill39/cheat/refs/heads/main/TOOLS.lua", true))()
     end
 end)
 
@@ -111,7 +111,7 @@ if saved then
     local ok, msg = isAuthValid(saved)
     if ok then
         ScreenGui:Destroy()
-        loadstring(game:HttpGet("https://yourdomain.com/your_script.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/catskill39/cheat/refs/heads/main/TOOLS.lua", true))()
     else
         Status.Text = msg
     end
