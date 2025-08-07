@@ -1,6 +1,6 @@
 local player = game.Players.LocalPlayer
 local screenGui = Instance.new("ScreenGui")
-screenGui.Name = "FrontEvillGUI"
+screenGui.Name = "LiteCheatsGUI"
 screenGui.ResetOnSpawn = false
 
 if syn then
@@ -223,7 +223,7 @@ local function typewriterEffect(text)
     subText.TextColor3 = Color3.fromRGB(200, 200, 200)
     subText.TextSize = 28
     subText.Font = Enum.Font.Gotham
-    subText.Text = "Created by Front-Evill"
+    subText.Text = "Created by Lite Cheats t.me/erk_x"
     subText.TextTransparency = 1
     subText.Parent = contentFrame
     
@@ -841,4 +841,4 @@ function showLanguageSelector()
    end)
 end
 
-typewriterEffect("Welcome to Front Evill Script 🔥👀")
+typewriterEffect("Welcome to Lite Cheats t.me/erk_x 🔥👀")
