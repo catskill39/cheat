@@ -1,4 +1,4 @@
-сделай чтобы этот код сразу загружал на английском языке
+
 
 local player = game.Players.LocalPlayer
 local screenGui = Instance.new("ScreenGui")
