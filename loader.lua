@@ -63,7 +63,7 @@ local SCRIPT_URLS = {
     {name = "Murder Mystery 2", url = "https://raw.githubusercontent.com/catskill39/cheat/refs/heads/main/auth%205.lua"}
 }
 
-local BYPASS_KEY_SYSTEM = false  -- Установите на true, чтобы пропустить систему ключей (покажет сообщение на 3 секунды и перейдёт к выбору скрипта)
+local BYPASS_KEY_SYSTEM = true  -- Установите на true, чтобы пропустить систему ключей (покажет сообщение на 3 секунды и перейдёт к выбору скрипта)
 
 --[🌐] Локализация
 local TRANSLATIONS = {
@@ -162,7 +162,7 @@ local function createLoadingGui()
     Frame.BackgroundTransparency = 0.2
 
     local LoadingText = Instance.new("TextLabel", Frame)
-    LoadingText.Text = "Lite Cheats Loading"
+    LoadingText.Text = "Lite Cheats HUB Loading..."
     LoadingText.Size = UDim2.new(0, 400, 0, 50)
     LoadingText.Position = UDim2.new(0.5, -200, 0.4, -25)
     LoadingText.BackgroundTransparency = 1
