@@ -162,7 +162,7 @@ local function createLoadingGui()
     Frame.BackgroundTransparency = 0.2
 
     local LoadingText = Instance.new("TextLabel", Frame)
-    LoadingText.Text = "Lite Cheats HUB Loading..."
+    LoadingText.Text = "Lite Cheats Loading"
     LoadingText.Size = UDim2.new(0, 400, 0, 50)
     LoadingText.Position = UDim2.new(0.5, -200, 0.4, -25)
     LoadingText.BackgroundTransparency = 1
@@ -463,7 +463,9 @@ local function createScriptSelectionGui(language, randomColor)
     ScrollFrame.Position = UDim2.new(0.05, 0, 0, 70)
     ScrollFrame.BackgroundTransparency = 1
     ScrollFrame.BorderSizePixel = 0
-    ScrollFrame.ScrollBarThickness = 6
+    ScrollFrame.ScrollBarThickness = 10 -- Увеличенная толщина для заметности
+    ScrollFrame.ScrollBarImageColor3 = Color3.fromRGB(255, 255, 255) -- Белый цвет ползунка
+    ScrollFrame.ScrollBarImageTransparency = 0 -- Всегда видимый (по умолчанию 0, но на всякий случай)
     ScrollFrame.CanvasSize = UDim2.new(0, 0, 0, 0)
     ScrollFrame.AutomaticCanvasSize = Enum.AutomaticSize.Y
 
